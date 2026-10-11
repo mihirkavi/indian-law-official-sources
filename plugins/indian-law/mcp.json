@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "indian-law-evidence": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        "./skills/indian-law/scripts/retrieval_server.py"
+      ],
+      "cwd": "./"
+    }
+  }
+}

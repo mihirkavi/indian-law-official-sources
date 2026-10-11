@@ -1,0 +1,1774 @@
+{
+  "schema_version": "1.0",
+  "policy": "official_only",
+  "last_reviewed": "2026-10-10",
+  "sources": [
+    {
+      "id": "india-code",
+      "name": "India Code",
+      "publisher": "Legislative Department",
+      "jurisdiction": "India",
+      "record_types": [
+        "statutes",
+        "rules"
+      ],
+      "url": "https://indiacode.gov.in/",
+      "legacy_urls": [
+        "https://indiacode.nic.in/",
+        "https://www.indiacode.nic.in/"
+      ],
+      "official_provenance_url": "https://www.indiacode.nic.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.indiacode.nic.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness.",
+      "retrieval_hosts": [
+        "indiacode.gov.in",
+        "www.indiacode.gov.in",
+        "www.indiacode.nic.in",
+        "indiacode.nic.in"
+      ]
+    },
+    {
+      "id": "central-gazette",
+      "name": "Gazette of India",
+      "publisher": "Department of Publication",
+      "jurisdiction": "India",
+      "record_types": [
+        "notifications",
+        "commencement"
+      ],
+      "url": "https://egazette.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://egazette.gov.in/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://egazette.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "sci",
+      "name": "Supreme Court of India",
+      "publisher": "Supreme Court of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "judgments",
+        "orders",
+        "rules"
+      ],
+      "url": "https://www.sci.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness.",
+      "retrieval_hosts": [
+        "www.sci.gov.in",
+        "api.sci.gov.in"
+      ]
+    },
+    {
+      "id": "sci-status",
+      "name": "Supreme Court case status",
+      "publisher": "Supreme Court of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "case_status"
+      ],
+      "url": "https://www.sci.gov.in/case-status-case-no/",
+      "legacy_urls": [
+        "https://main.sci.gov.in/case-status"
+      ],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "observed_or_service_dependent",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "scr",
+      "name": "Supreme Court Reports",
+      "publisher": "Supreme Court of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "judgments"
+      ],
+      "url": "https://scr.sci.gov.in/scrsearch/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "observed_or_service_dependent",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "verdict-finder",
+      "name": "Verdict Finder",
+      "publisher": "Supreme Court of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "judgments",
+        "orders"
+      ],
+      "url": "https://verdictfinder.sci.gov.in/elk_frontend/index.php",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "judges-library",
+      "name": "Judges Library: SUPLIS / LEGIS",
+      "publisher": "Supreme Court Judges Library",
+      "jurisdiction": "India",
+      "record_types": [
+        "legislative_history",
+        "citation_discovery"
+      ],
+      "url": "https://www.sci.gov.in/judges-library/",
+      "legacy_urls": [
+        "https://www.registry.sci.gov.in/library-portal/suplis/MAIN.html",
+        "https://www.registry.sci.gov.in/library-portal/legis/mainpage.html"
+      ],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "vidhi-gyan",
+      "name": "Vidhi Gyan Sampada",
+      "publisher": "Supreme Court Judges Library",
+      "jurisdiction": "India",
+      "record_types": [
+        "legal_history"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/judges-library/",
+      "verification_status": "candidate_unverified",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": false,
+      "exclusion_reason": "Resolve current endpoint and official availability/provenance before use",
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/judges-library/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ecourts",
+      "name": "eCourts gateway",
+      "publisher": "e-Committee / NIC",
+      "jurisdiction": "India",
+      "record_types": [
+        "court_discovery"
+      ],
+      "url": "https://ecourts.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://ecommitteesci.gov.in/service/ecourts-portal/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://ecommitteesci.gov.in/service/ecourts-portal/"
+      },
+      "api": {
+        "status": "documented_restricted",
+        "documentation_url": "https://www.pib.gov.in/newsite/erelcontent.aspx?lang=2&reg=48&relid=217906",
+        "eligibility": "Historical official documentation describes departmental authorization; current lawyer access not established",
+        "operations": [
+          "case data; scope must be verified"
+        ],
+        "auth_method": "Approved departmental ID/access key described; do not request secrets in chat",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ecourts-services",
+      "name": "eCourts Services",
+      "publisher": "e-Committee / NIC",
+      "jurisdiction": "India",
+      "record_types": [
+        "case_status",
+        "orders",
+        "cause_lists"
+      ],
+      "url": "https://services.ecourts.gov.in/ecourtindia_v6/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://ecommitteesci.gov.in/service/ecourts-services-mobile-application/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "observed_or_service_dependent",
+        "evidence_url": "https://ecommitteesci.gov.in/service/ecourts-services-mobile-application/"
+      },
+      "api": {
+        "status": "documented_restricted",
+        "documentation_url": "https://www.pib.gov.in/newsite/erelcontent.aspx?lang=2&reg=48&relid=217906",
+        "eligibility": "Historical official documentation describes departmental authorization; current lawyer access not established",
+        "operations": [
+          "case data; scope must be verified"
+        ],
+        "auth_method": "Approved departmental ID/access key described; do not request secrets in chat",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "njdg",
+      "name": "National Judicial Data Grid",
+      "publisher": "e-Committee / NIC",
+      "jurisdiction": "India",
+      "record_types": [
+        "statistics",
+        "case_discovery"
+      ],
+      "url": "https://njdg.ecourts.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "documented_restricted",
+        "documentation_url": "https://www.pib.gov.in/newsite/erelcontent.aspx?lang=2&reg=48&relid=217906",
+        "eligibility": "Historical official documentation describes departmental authorization; current lawyer access not established",
+        "operations": [
+          "case data; scope must be verified"
+        ],
+        "auth_method": "Approved departmental ID/access key described; do not request secrets in chat",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ecommittee",
+      "name": "e-Committee",
+      "publisher": "e-Committee, Supreme Court of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "service_documentation"
+      ],
+      "url": "https://ecommitteesci.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.sci.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.sci.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "bombay-hc",
+      "name": "Bombay High Court",
+      "publisher": "Bombay High Court",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "judgments",
+        "orders",
+        "status",
+        "rules",
+        "cause_lists"
+      ],
+      "url": "https://bombayhighcourt.gov.in/bhc/",
+      "legacy_urls": [
+        "https://bombayhighcourt.nic.in/ord_qrywebcase.php"
+      ],
+      "official_provenance_url": "https://bombayhighcourt.gov.in/bhc/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://bombayhighcourt.gov.in/bhc/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-law",
+      "name": "Maharashtra Act list",
+      "publisher": "Law and Judiciary Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "state_statutes",
+        "rules"
+      ],
+      "url": "https://lj.maharashtra.gov.in/en/document-category/act-list/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://lj.maharashtra.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://lj.maharashtra.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-gazette",
+      "name": "Maharashtra Gazette",
+      "publisher": "Directorate of Government Printing, Stationery and Publications",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "gazette",
+        "notifications"
+      ],
+      "url": "https://dgps.maharashtra.gov.in/Site/Home/Index.aspx",
+      "legacy_urls": [],
+      "official_provenance_url": "https://industry.maharashtra.gov.in/en/allied-offices/directorate-government-printing-stationary-publication-mumbai",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://industry.maharashtra.gov.in/en/allied-offices/directorate-government-printing-stationary-publication-mumbai"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-home",
+      "name": "Maharashtra Home Department",
+      "publisher": "Home Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "state_notifications"
+      ],
+      "url": "https://home.maharashtra.gov.in/en/documents/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://home.maharashtra.gov.in/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://home.maharashtra.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mha",
+      "name": "Ministry of Home Affairs",
+      "publisher": "Ministry of Home Affairs",
+      "jurisdiction": "India",
+      "record_types": [
+        "criminal_law",
+        "notifications"
+      ],
+      "url": "https://www.mha.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://www.mha.gov.in/",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://www.mha.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "dolr",
+      "name": "DoLR citizen services",
+      "publisher": "Department of Land Resources",
+      "jurisdiction": "India",
+      "record_types": [
+        "official_state_directory"
+      ],
+      "url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "not_observed",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "dilrmp",
+      "name": "DILRMP dashboard",
+      "publisher": "Department of Land Resources",
+      "jurisdiction": "India",
+      "record_types": [
+        "digitization_statistics"
+      ],
+      "url": "https://dilrmp.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-land",
+      "name": "Mahabhumi / Mahabhulekh",
+      "publisher": "Maharashtra Land Records Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "revenue_records",
+        "maps"
+      ],
+      "url": "https://bhulekh.mahabhumi.gov.in/",
+      "legacy_urls": [
+        "https://mahabhumi.gov.in/"
+      ],
+      "official_provenance_url": "https://bhumiabhilekh.maharashtra.gov.in/Services",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Public preliminary viewing; signed download explicitly requires login on the inspected View712 page. No actual property queried.",
+        "captcha": "unknown",
+        "evidence_url": "https://bhumiabhilekh.maharashtra.gov.in/Services/View712"
+      },
+      "api": {
+        "status": "documented_restricted",
+        "documentation_url": "https://bhumiabhilekh.maharashtra.gov.in/InstituteUser/Create",
+        "eligibility": "Institutional registration and approval must be confirmed; no entitlement established",
+        "operations": [
+          "GetOwnerDetails",
+          "GetOwnerDetailsCount"
+        ],
+        "auth_method": "Unknown",
+        "test_date": null,
+        "verification_evidence": "Official Services page links Mahabhumi API; institutional registration page inspected; API host timed out. Contract and usable access not verified.",
+        "candidate_endpoint": "https://api.mahabhumi.gov.in/"
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-signed-land",
+      "name": "Digitally signed Satbara",
+      "publisher": "Maharashtra Land Records Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "signed_revenue_records"
+      ],
+      "url": "https://digitalsatbara.mahabhumi.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://mahabhumi.gov.in/mahabhumilink",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "required_for_operation",
+        "operation": "Authenticated document download; not preliminary public research",
+        "captcha": "unknown",
+        "evidence_url": "https://digitalsatbara.mahabhumi.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-archives",
+      "name": "Aaple Abhilekh",
+      "publisher": "Maharashtra Land Records Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "archived_revenue_records"
+      ],
+      "url": "https://aapleabhilekh.mahabhumi.gov.in/erecords/RegularSearch/RegularSearch",
+      "legacy_urls": [],
+      "official_provenance_url": "https://mahabhumi.gov.in/mahabhumilink",
+      "verification_status": "official_index_found",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "required_for_operation",
+        "operation": "Authenticated document download; not preliminary public research",
+        "captcha": "unknown",
+        "evidence_url": "https://aapleabhilekh.mahabhumi.gov.in/erecords/RegularSearch/RegularSearch"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mh-registration",
+      "name": "IGR Maharashtra",
+      "publisher": "Inspector General of Registration and Stamps, Maharashtra",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "registered_deeds",
+        "indexes"
+      ],
+      "url": "https://igrmaharashtra.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://bhumiabhilekh.maharashtra.gov.in/EODB",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://bhumiabhilekh.maharashtra.gov.in/EODB"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "official-api-discovery",
+      "name": "API Setu",
+      "publisher": "NeGD, MeitY",
+      "jurisdiction": "India",
+      "record_types": [
+        "api_documentation"
+      ],
+      "url": "https://apisetu.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://apisetu.gov.in/",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://apisetu.gov.in/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "up-land",
+      "name": "Uttar Pradesh land records",
+      "publisher": "Uttar Pradesh Revenue / Registration Department",
+      "jurisdiction": "Uttar Pradesh",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://upbhulekh.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ka-land",
+      "name": "Karnataka land records",
+      "publisher": "Karnataka Revenue / Registration Department",
+      "jurisdiction": "Karnataka",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://rdservices.karnataka.gov.in/",
+      "legacy_urls": [
+        "https://landrecords.karnataka.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ts-land",
+      "name": "Telangana land records",
+      "publisher": "Telangana Revenue / Registration Department",
+      "jurisdiction": "Telangana",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://bhubharati.telangana.gov.in/",
+      "legacy_urls": [
+        "https://dharani.telangana.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "mp-land",
+      "name": "Madhya Pradesh land records",
+      "publisher": "Madhya Pradesh Revenue / Registration Department",
+      "jurisdiction": "Madhya Pradesh",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://mpbhulekhrecords.com/",
+      "legacy_urls": [
+        "https://mpbhulekh.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "rj-land",
+      "name": "Rajasthan land records",
+      "publisher": "Rajasthan Revenue / Registration Department",
+      "jurisdiction": "Rajasthan",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://apnakhata.raj.nic.in/",
+      "legacy_urls": [
+        "https://apnakhata.rajasthan.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "wb-land",
+      "name": "West Bengal land records",
+      "publisher": "West Bengal Revenue / Registration Department",
+      "jurisdiction": "West Bengal",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://banglarbhumi.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ap-land",
+      "name": "Andhra Pradesh land records",
+      "publisher": "Andhra Pradesh Revenue / Registration Department",
+      "jurisdiction": "Andhra Pradesh",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://meebhoomi.ap.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "br-land",
+      "name": "Bihar land records",
+      "publisher": "Bihar Revenue / Registration Department",
+      "jurisdiction": "Bihar",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://biharbhumi.bihar.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "gj-land",
+      "name": "Gujarat land records",
+      "publisher": "Gujarat Revenue / Registration Department",
+      "jurisdiction": "Gujarat",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://anyror.gujarat.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "pb-land",
+      "name": "Punjab land records",
+      "publisher": "Punjab Revenue / Registration Department",
+      "jurisdiction": "Punjab",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://revenue.punjab.gov.in/",
+      "legacy_urls": [
+        "https://jamabandi.punjab.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "hr-land",
+      "name": "Haryana land records",
+      "publisher": "Haryana Revenue / Registration Department",
+      "jurisdiction": "Haryana",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://jamabandi.nic.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "tn-land",
+      "name": "Tamil Nadu land records",
+      "publisher": "Tamil Nadu Revenue / Registration Department",
+      "jurisdiction": "Tamil Nadu",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://eservices.tn.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "kl-land",
+      "name": "Kerala land records",
+      "publisher": "Kerala Revenue / Registration Department",
+      "jurisdiction": "Kerala",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://revenue.kerala.gov.in/",
+      "legacy_urls": [
+        "http://erekha.kerala.gov.in/"
+      ],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "directory_linked",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "exclusion_reason": null,
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "up-registration",
+      "name": "Uttar Pradesh registration (IGRSUP)",
+      "publisher": "Uttar Pradesh Revenue / Registration Department",
+      "jurisdiction": "Uttar Pradesh",
+      "record_types": [
+        "property_records"
+      ],
+      "url": "https://igrsup.gov.in/",
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "candidate_unverified",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": false,
+      "exclusion_reason": "Resolve current endpoint and official availability/provenance before use",
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "ka-registration",
+      "name": "Karnataka registration / Kaveri",
+      "publisher": "Karnataka Revenue / Registration Department",
+      "jurisdiction": "Karnataka",
+      "record_types": [
+        "property_records"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": "https://dolr.gov.in/en/citizen-centric-services/",
+      "verification_status": "candidate_unverified",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": false,
+      "exclusion_reason": "Resolve current endpoint and official availability/provenance before use",
+      "access": {
+        "login": "unknown",
+        "operation": "Read requested public record; inspect actual access flow first",
+        "captcha": "unknown",
+        "evidence_url": "https://dolr.gov.in/en/citizen-centric-services/"
+      },
+      "api": {
+        "status": "unverified",
+        "documentation_url": null,
+        "eligibility": "Not established",
+        "operations": [],
+        "auth_method": "Not established",
+        "test_date": null,
+        "verification_evidence": null
+      },
+      "notes": "Directory/index provenance does not establish live access, current consolidation, or completeness."
+    },
+    {
+      "id": "scc-online",
+      "name": "SCC Online",
+      "publisher": "SCC Online",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "manupatra",
+      "name": "Manupatra",
+      "publisher": "Manupatra",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "indian-kanoon",
+      "name": "Indian Kanoon",
+      "publisher": "Indian Kanoon",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://indiankanoon.org/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "taxmann-itr",
+      "name": "Taxmann / ITR",
+      "publisher": "Taxmann / ITR",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "lii-india",
+      "name": "LII of India",
+      "publisher": "LII of India",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "http://www.liiofindia.org/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "air-online",
+      "name": "AIR Online",
+      "publisher": "AIR Online",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "nus-libguides",
+      "name": "NUS LibGuides",
+      "publisher": "NUS LibGuides",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://libguides.nus.edu.sg/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "lawcentral",
+      "name": "LawCentral",
+      "publisher": "LawCentral",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://lawcentral.ai/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "jurigram",
+      "name": "Jurigram",
+      "publisher": "Jurigram",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://jurigram.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "medium",
+      "name": "Medium",
+      "publisher": "Medium",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://medium.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "anantam-ias",
+      "name": "Anantam IAS",
+      "publisher": "Anantam IAS",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://anantamias.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "landrecordsindia",
+      "name": "LandRecordsIndia",
+      "publisher": "LandRecordsIndia",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://www.landrecordsindia.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "next-ias",
+      "name": "Next IAS",
+      "publisher": "Next IAS",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://www.nextias.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "assetly",
+      "name": "Assetly",
+      "publisher": "Assetly",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": "https://assetlyhq.com/",
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "google-search-links",
+      "name": "Google knowledge panel / search links",
+      "publisher": "Google knowledge panel / search links",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "ecourtsindia-private",
+      "name": "eCourtsIndia private API",
+      "publisher": "eCourtsIndia private API",
+      "jurisdiction": "India",
+      "record_types": [
+        "secondary"
+      ],
+      "url": null,
+      "legacy_urls": [],
+      "official_provenance_url": null,
+      "verification_status": "excluded_secondary",
+      "checked_on": "2026-10-10",
+      "official": false,
+      "enabled": false,
+      "exclusion_reason": "Excluded by the user official-only policy",
+      "access": {
+        "login": "unknown",
+        "operation": "No retrieval permitted"
+      },
+      "api": {
+        "status": "unverified"
+      }
+    },
+    {
+      "id": "mh-land-services",
+      "name": "Maharashtra Land Records Department services",
+      "publisher": "Maharashtra Land Records Department",
+      "jurisdiction": "Maharashtra",
+      "record_types": [
+        "7/12",
+        "8A",
+        "property card",
+        "maps",
+        "archives",
+        "institutional API onboarding"
+      ],
+      "url": "https://bhumiabhilekh.maharashtra.gov.in/Services",
+      "legacy_urls": [
+        "https://mahabhumi.gov.in/mahabhumilink"
+      ],
+      "official_provenance_url": "https://mahabhumi.gov.in/mahabhumilink",
+      "verification_status": "page_inspected",
+      "checked_on": "2026-10-10",
+      "official": true,
+      "enabled": true,
+      "access": {
+        "login": "required_for_operation",
+        "operation": "Public service directory and View712 inspected; login explicitly required for signed download, not presumed for every public view",
+        "evidence_url": "https://bhumiabhilekh.maharashtra.gov.in/Services/View712"
+      },
+      "api": {
+        "status": "documented_restricted",
+        "documentation_url": "https://bhumiabhilekh.maharashtra.gov.in/InstituteUser/Create",
+        "candidate_endpoint": "https://api.mahabhumi.gov.in/",
+        "eligibility": "Institutional onboarding; access and operational contract not verified"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Indian Law — Official Sources"
+  short_description: "Traceable Maharashtra legal research and drafting"
+  default_prompt: "Use $indian-law to research a Maharashtra legal issue with verified official sources."
+policy:
+  allow_implicit_invocation: true

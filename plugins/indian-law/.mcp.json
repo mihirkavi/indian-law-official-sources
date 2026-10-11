@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "indian-law-evidence": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--script",
+        "./skills/indian-law/scripts/retrieval_server.py"
+      ],
+      "cwd": "."
+    }
+  }
+}

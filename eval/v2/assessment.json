@@ -1,0 +1,176 @@
+{
+  "version": "v2",
+  "assessed_at_utc": "2026-10-10",
+  "rubric_source": "eval/v2/protocol.md",
+  "input_scope": "Frozen prompts/protocol and nine neutral answer.md/trace.json files only; no label map, raw arms, product, prior evaluations/reports or other agent output read.",
+  "blinding": "partial",
+  "blinding_limitations": [
+    "Neutral traces retain packaged_cli_fetch, actual_tool_route, loaded-file manifest references and skill/context read names; answers mention packaged helper. These disclose intervention characteristics even without opening the map.",
+    "Trace lengths, schemas and detail differ by label. Labels rotate by case; no arm mapping was requested or inferred for scoring."
+  ],
+  "assessment_limitations": [
+    "AI assessor; three broad human-suggested topics rather than lawyer-curated identified-case gold answers.",
+    "Official source access is intermittent; direct public download succeeded for decisive Supreme Court PDF where web open timed out.",
+    "Portals and CAPTCHA pages receive at most one evidence/access point; no ledger/format bonus, and no credit for merely indexed snippets.",
+    "No statistical significance, complete local docket coverage or consumer ChatGPT/Claude generalization."
+  ],
+  "cases": {
+    "umerkhed-property": {
+      "A": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Calibrated failure report; directly documented Case Status/CNR interfaces and CAPTCHA route, but no local case query/result or property original."
+      },
+      "B": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "WP7778/2022 explicitly remains an unverified acquisition lead concerning the taluka. Correct CAPTCHA routes and scoped next step; no inspected concrete original."
+      },
+      "C": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Cause-list snippet explicitly excluded from verified property evidence. Correct CNR/judgment portals and exact scoped next step; no local original."
+      }
+    },
+    "alibaug-property": {
+      "A": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "2023:BHC-AS:24748 is correctly marked unverified; route and next step demonstrated, but no inspected concrete original."
+      },
+      "B": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Separates court location from property location and labels both High Court leads unverified. Correct portals and case-number follow-up; no inspected local original."
+      },
+      "C": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 2,
+        "completion_access": 2,
+        "total": 6,
+        "verified_local_case_origin_originals": 1,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 1,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Independently reproduced the official 25-page Supreme Court original, matching claimed SHA-256. Caption, partition, RCS103/1996 Alibag origin, schedule and dismissal verified at stated pinpoints. One useful concrete result within explicit scope; no separately retrieved trial-court order."
+      }
+    },
+    "sangli-yavatmal-family": {
+      "A": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Distinguishes widow support, matrimonial maintenance and inheritance; Sangli lead explicitly unverified and not established as widow case. Correct portals/barrier and actionable follow-up; no local original."
+      },
+      "B": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 1,
+        "claimed_legislation_originals": 0,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Carefully identifies category/personal-law ambiguity. Case Status interface and filters independently reproduced; no completed search or relevant local original."
+      },
+      "C": {
+        "correctness_calibration": 2,
+        "verified_relevant_record_evidence": 1,
+        "completion_access": 1,
+        "total": 4,
+        "verified_local_case_origin_originals": 0,
+        "verified_local_trial_court_originals": 0,
+        "verified_portal_interfaces": 2,
+        "claimed_legislation_originals": 1,
+        "assessor_verified_legislation_originals": 0,
+        "critical_errors": [],
+        "rationale": "Appropriately separates possible widow-support legislation from local cases and does not assume applicability. Portals independently verified. Statutory retrieval remains conditional because assessor attempts timed out; no local original."
+      }
+    }
+  },
+  "record_counts": {
+    "unique_assessor_verified_local_case_origin_originals": 1,
+    "unique_assessor_verified_local_trial_court_originals": 0,
+    "unique_assessor_verified_portal_interface_urls": 3,
+    "unique_claimed_legislation_originals": 1,
+    "unique_assessor_verified_legislation_originals": 0
+  },
+  "decisive_record": {
+    "case": "alibaug-property",
+    "label": "C",
+    "name": "Mohan Hirachand Shah v. Geeta Kumarchand Shah & Ors.",
+    "citation": "2024 INSC 222",
+    "url": "https://api.sci.gov.in/supremecourt/2017/18931/18931_2017_14_1501_51594_FinalOrder_19-Mar-2024.pdf",
+    "sha256": "d8a4578825306ba932a65251aa3d70e479ca490ac9ebbf5adc11cd3fe21ba260",
+    "pinpoints": [
+      "p1 caption and partition/separate possession",
+      "p2 para2 RCS103/1996 IInd Joint Civil Judge Junior Division Alibag",
+      "pp3\u20134 para3 schedule Mandve-Zirad/Dhokwade",
+      "p8 para7 trial/first appeal",
+      "p24 para28 appeals fail",
+      "p25 date March19 2024"
+    ],
+    "independent_verification": "200 PDF public download; 25 pages; matching SHA-256; original text inspected; web open separately timed out"
+  },
+  "conditional_evidence": [
+    {
+      "case": "sangli-yavatmal-family",
+      "label": "C",
+      "url": "https://www.indiacode.nic.in/bitstream/123456789/1638/1/AA1956____78.pdf",
+      "status": "Claimed inspected statutory original in neutral trace; independent urllib and web attempts timed out; not counted as assessor verified. Statutory summary is not local case evidence and does not change 2/1/1 scoring."
+    }
+  ],
+  "comparison": "All labels tie at4/6 for Umerkhed and family cases. Alibaug C6/6 exceeds A/B4/6 by one evidence and one completion point. No critical error established.",
+  "verification_evidence_directory": "eval/v2/assessor-evidence"
+}

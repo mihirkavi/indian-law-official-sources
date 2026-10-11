@@ -1,0 +1,15 @@
+{
+  "name": "indian-law-local",
+  "description": "Official-source Indian legal research plugin prioritizing Maharashtra practice",
+  "owner": {
+    "name": "Mihir Kavishwar",
+    "url": "https://github.com/mihirkavi"
+  },
+  "plugins": [
+    {
+      "name": "indian-law",
+      "source": "./plugins/indian-law",
+      "description": "Official-source Indian legal research for Maharashtra"
+    }
+  ]
+}

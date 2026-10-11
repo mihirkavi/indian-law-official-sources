@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "id": "my-watchlist",
+  "items": [],
+  "schedule": {"mode": "manual", "frequency": null, "timezone": null, "host_schedule_id": null},
+  "languages": ["en"],
+  "notifications": {"changes": true, "failures": true, "action_needed": true, "unchanged_summaries": false, "destination": "current_host"},
+  "retention": {"store_in": "authorized_workspace", "days": null},
+  "last_successful_baseline": {},
+  "notice": "Configure items and retention with the user. This file does not activate a schedule."
+}

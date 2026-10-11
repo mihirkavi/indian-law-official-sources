@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-10",
+  "frozen_before_answer_runs": true,
+  "cases": [
+    {
+      "id": "umerkhed-property",
+      "prompt": "Property disputes list in Umerkhed, Maharashtra. Try to find concrete relevant court cases or published judgments through official sources, including official routes that ordinary web search may miss. Report what you actually retrieved, and whether a complete local list is possible with the details supplied."
+    },
+    {
+      "id": "alibaug-property",
+      "prompt": "Property disputes in Alibaug, Maharashtra. Try to find concrete relevant court cases or published judgments through official sources, including official routes that ordinary web search may miss. Report what you actually retrieved, and whether a complete local list is possible with the details supplied."
+    },
+    {
+      "id": "sangli-yavatmal-family",
+      "prompt": "Widowed and alimony case in Sangli and Yavatmal, Maharashtra. Try to find concrete relevant court cases or published judgments through official sources, including official routes that ordinary web search may miss. Explain any ambiguity in the family-law category and report what you actually retrieved; do not invent facts or claim a complete local list."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "indian-law-local",
+  "interface": {
+    "displayName": "Indian Law — Official Sources"
+  },
+  "plugins": [
+    {
+      "name": "indian-law",
+      "source": {
+        "source": "local",
+        "path": "./plugins/indian-law"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

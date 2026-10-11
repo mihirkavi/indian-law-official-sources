@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "indian-law",
+  "version": "0.2.1",
+  "description": "Official-source Indian legal research, judgment briefs, drafting and configurable watchlists, prioritizing Maharashtra civil, criminal and family practice.",
+  "author": {
+    "name": "Mihir Kavishwar",
+    "url": "https://github.com/mihirkavi"
+  },
+  "homepage": "https://github.com/mihirkavi/indian-law-official-sources",
+  "repository": "https://github.com/mihirkavi/indian-law-official-sources",
+  "license": "MIT",
+  "keywords": [
+    "indian-law",
+    "official-sources",
+    "maharashtra",
+    "legal-research",
+    "agent-skills",
+    "mcp",
+    "codex",
+    "claude-code"
+  ]
+}

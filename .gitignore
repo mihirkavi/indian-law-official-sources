@@ -1,0 +1,32 @@
+# Local runtime and confidential matter/session data
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+
+# Downloaded records, live sessions and unpublished raw evaluation traces
+/eval/*
+!/eval/v2/
+/eval/v2/*
+!/eval/v2/prompts.json
+!/eval/v2/protocol.md
+!/eval/v2/results.json
+!/eval/v2/assessment.json
+!/eval/v2/assessment.md
+!/eval/v2/compliance-audit.json
+
+# Publish curated documentation; retain local development logs privately
+/docs/*
+!/docs/source-audit.md
+!/docs/efficacy-report.md
+!/docs/efficacy-v2-report.md
+!/docs/retrieval-review.md
+!/docs/public-validation.md
+!/docs/installed-demo.md
+!/docs/indian-law-plugin-design.md
+
+/dist/

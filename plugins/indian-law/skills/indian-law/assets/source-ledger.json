@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "entries": [],
+  "entry_fields": ["source_id", "title", "issuer", "document_date", "url", "pinpoint", "version_or_applicability", "retrieval_method", "retrieved_at", "verification_status", "claims_supported", "limitations"],
+  "retrieval_methods": ["api", "browser", "direct_document", "user_copy"],
+  "verification_statuses": ["original_inspected", "official_link_only", "unverified_user_copy", "blocked", "unverified"],
+  "notice": "An empty ledger is a template, not evidence that a check occurred."
+}

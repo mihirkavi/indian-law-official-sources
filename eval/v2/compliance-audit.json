@@ -1,0 +1,110 @@
+[
+  {
+    "case": "umerkhed-property",
+    "arm": "treatment",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 283,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "umerkhed-property",
+    "arm": "baseline",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 283,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "umerkhed-property",
+    "arm": "generic",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 260,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "alibaug-property",
+    "arm": "baseline",
+    "action_count": 9,
+    "within_ten_actions": true,
+    "answer_words": 283,
+    "within_450_words": true,
+    "count_declared": 9,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "alibaug-property",
+    "arm": "generic",
+    "action_count": 9,
+    "within_ten_actions": true,
+    "answer_words": 284,
+    "within_450_words": true,
+    "count_declared": 9,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "alibaug-property",
+    "arm": "treatment",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 343,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "sangli-yavatmal-family",
+    "arm": "baseline",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 312,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "sangli-yavatmal-family",
+    "arm": "treatment",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 336,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  },
+  {
+    "case": "sangli-yavatmal-family",
+    "arm": "generic",
+    "action_count": 10,
+    "within_ten_actions": true,
+    "answer_words": 295,
+    "within_450_words": true,
+    "count_declared": 10,
+    "recorded_web_requests_single_action": true,
+    "declared_count_consistent": true,
+    "audit_scope": "Trace structure only; separate independent evidence assessment. No raw answer edited."
+  }
+]
