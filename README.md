@@ -5,7 +5,7 @@
 
 A portable Agent Skill and public-evidence toolset for Indian lawyers, prioritizing **Maharashtra civil, criminal and family/domestic practice**. It works with compatible Codex and Claude Code plugin/Agent Skills hosts. The AI host supplies search, an interactive browser, interpretation, language ability and optional scheduling; this repository supplies legal research workflows, official-source routing, evidence tools and templates.
 
-**Status: experimental, version 0.2.2.** Codex installation, native Codex MCP tool calls and the CLI fallback have been tested; a non-interactive Codex run correctly declined to brief when its approval policy blocked the tools. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
+**Status: experimental, version 0.2.2.** Codex installation, the CLI fallback and an interactive Codex session that called the MCP tools natively to complete a quote-checked brief have been tested. Non-interactive Codex runs block the tools under the default approval policy, and the agent declines rather than guessing. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
 
 ## What it does
 

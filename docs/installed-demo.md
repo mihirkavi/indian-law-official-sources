@@ -20,7 +20,20 @@ This establishes that Codex can expose and call the plugin's MCP tools natively.
 
 ## Codex rerun (later on 10 October 2026)
 
-The same request was repeated non-interactively with the default `approval_policy = never`. Codex read the skill and template, then `fetch_document` was refused: “MCP tool call requires approval, but approval policy is never.” The agent stated it could not verify the caption, date, bench, disposition or any quotation, and **did not write a brief from unverified material**, which is the intended behavior. A plugin-scoped `default_tools_approval_mode="approve"` override did not change the outcome in this Codex build. Interactive Codex sessions can approve the call when prompted.
+The same request was repeated non-interactively with the default `approval_policy = never`. Codex read the skill and template, then `fetch_document` was refused: “MCP tool call requires approval, but approval policy is never.” The agent stated it could not verify the caption, date, bench, disposition or any quotation, and **did not write a brief from unverified material**, which is the intended behavior. A plugin-scoped `default_tools_approval_mode="approve"` override did not change the outcome in this Codex build. The interactive session below completed the brief with user-approved tool calls.
+
+## Codex interactive session — completed judgment brief (11 October 2026)
+
+Interactive Codex (`gpt-6-astra`, workspace-write sandbox with network access), plugin 0.2.2 installed from the local marketplace, same request and order. The user approved the plugin tool calls when prompted. At startup Codex reported that `indian-law-evidence` failed its first MCP handshake (“connection closed”). The server was then listed as starting again, and its tools were available for the turn. The cause of the first failure was not established; the same server answered `initialize` correctly when launched manually from Codex's plugin cache.
+
+Codex natively called `fetch_document` once, `read_document` 7 times and `check_quote` once. It saved a 284-word brief that:
+
+- verified the caption, 2024 INSC 222, C.A. Nos. 773–775 of 2023, the 19 March 2024 date and the Sundresh/Bhatti bench (PDF pp. 1, 25);
+- correctly placed the challenge to items 19–21 at ¶9.1 (p. 12) and treated the exclusive-ownership argument at ¶12 as the appellant's submission, not the holding;
+- quoted the operative order (¶28) with `check_quote` **matched** on PDF page 24;
+- disclosed that later treatment, printed-page numbering, signature and certified-copy status were not verified.
+
+Those pinpoints were independently re-read from the saved extraction. The brief itself and the session transcript are retained privately with the other raw host sessions.
 
 ## Claude Code session — completed judgment brief (CLI route)
 
