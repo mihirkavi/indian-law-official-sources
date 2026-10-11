@@ -1,6 +1,6 @@
 # Indian Law — Official Sources
 
-Version0.2.2: a portable Agent Skill and public-document evidence toolset for Indian lawyers, prioritizing Maharashtra civil, criminal and family/domestic practice.
+Version 0.3.0: a portable Agent Skill and public-document evidence toolset for Indian lawyers, prioritizing Maharashtra civil, criminal and family/domestic practice.
 
 Research and drafting use official government/judicial sources. The source inventory, access/API assessments, practice guidance, templates and configurable watchlist helpers are included in `skills/indian-law`. The CLI and optional local stdio MCP tools fetch approved public HTTPS documents, preserve origin/time/hashes, extract PDF/static HTML and check exact quotation/page matches.
 

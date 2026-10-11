@@ -1,0 +1,46 @@
+{
+  "_comment": "Synthetic example only. Every name, number and place below is fictional. Copy this file into the matter workspace and replace every value from the verified record.",
+  "court_heading": "IN THE HON’BLE HIGH COURT OF JUDICATURE AT BOMBAY, NAGPUR BENCH, NAGPUR",
+  "case_number_line": "CRIMINAL APPLICATION (APL) NO.             /2026",
+  "applicants": [
+    {"name": "Arun S/o Bhaskar Example", "details": ["Aged about 35 years, Occ: Service,"],
+     "lines": ["R/o Sample Nagar, Tq. and Dist. Exampleur."], "relation": "Husband"},
+    {"name": "Bhaskar S/o Chandra Example", "details": ["Aged about 62 years, Occ: Retired,"], "relation": "Father-in-law"},
+    {"name": "Chitra W/o Bhaskar Example", "details": ["Aged about 58 years, Occ: Household,"], "relation": "Mother-in-law",
+     "after": ["2 and 3 R/o Sample Nagar, Tq. and Dist. Exampleur."]}
+  ],
+  "non_applicants": [
+    {"name": "State of Maharashtra", "lines": ["Through Police Station Officer, Sample Police Station, Dist. Exampleur."]},
+    {"name": "Deepa W/o Arun Example", "lines": ["Aged about 30 years, Occ: Household,", "R/o Demo Village, Tq. and Dist. Exampleur."], "relation": "Complainant"}
+  ],
+  "title_lines": [
+    "^^FIR No^^: 000/2025, dated 01/01/2025, registered with Sample Police Station, Dist. Exampleur.",
+    "^^RCC NO.^^ 00/2025 pending on the file of learned Judicial Magistrate First Class, Exampleur arising out of Charge sheet no. 00/2025, dated 01/03/2025.",
+    "^^OFFENCES PUNISHABLE U/S^^**:** Section 85 and Section 115(2) of Bharatiya Nyaya Sanhita, 2023."
+  ],
+  "facts": [
+    "The Applicants are peace loving and law-abiding citizens of India, residing at the above-mentioned addresses in the title clause. The applicant no. 1 and the non-applicant no. 2 got married on [FACT REQUIRED: date of marriage] as per [FACT REQUIRED: rites/customs]. The applicant no. 2 is the father-in-law and the applicant no. 3 is the mother-in-law of the non-applicant no. 2.",
+    "By the present application, the applicants are seeking quashment of FIR No. 000/2025 dated 01/01/2025 registered with the non-applicant no. 1 Police Station for the offences punishable under Section 85 and Section 115(2) of Bharatiya Nyaya Sanhita, 2023.",
+    "That, the copy of the said FIR is annexed herewith as “ANNEXURE A”. Bare perusal of the said FIR would reveal that the non-applicant no. 2 has alleged therein, in substance, as under –",
+    {"quote": "[FACT REQUIRED: faithful English summary of the FIR allegations, keeping the complainant's attribution of each act]"},
+    {"text": "It is most humbly submitted that the Applicants are falsely roped in the present case. Bare perusal of the FIR would reveal that prima facie, no case is made out against the applicants for the alleged offences. Hence, the applicants are seeking to quash the aforesaid FIR, on the following grounds -", "flat": true}
+  ],
+  "grounds": [
+    "Bare perusal of the FIR would reveal that there is no specific role attributed to the applicants no. 2 and 3. [FACT REQUIRED: analysis tied to the record]. Hence, on this count also, the said FIR and proceedings arising out of the same deserve to be quashed and set aside."
+  ],
+  "concluding": [
+    "In view of the above facts and circumstances, the Applicants herein are left with no other alternative and efficacious remedy, than to approach this Hon’ble Court praying for quashing of the F.I.R. by invoking its inherent powers under Section 528 of the Bharatiya Nagarik Suraksha Sanhita, 2023. Therefore, the Applicants are filing the present application.",
+    "The Applicants undertake to file the translated copies of the documents as and when required by this Hon’ble Court.",
+    "[TO BE CONFIRMED: statement regarding previous proceedings]"
+  ],
+  "prayers": [
+    "Quash and set aside the FIR bearing No. 000/2025 (ANNEXURE A) registered at Non-applicant no. 1 – Sample Police Station, dated 01/01/2025, against the applicants, in the interest of Justice;",
+    "Allow the application with costs;",
+    "Be pleased to grant such other relief and pass such order as this Hon’ble Court may deem fit and proper in the facts and circumstances of the case, in the interest of justice."
+  ],
+  "place": "NAGPUR",
+  "date": "    /    /2026",
+  "counsel": "[COUNSEL NAME]",
+  "affirmation": "I, [FACT REQUIRED: deponent name, age, address], the applicant no. [  ], do hereby take an oath and state on solemn affirmation that the contents of above all Paras 1 to {last_para} of the application are drafted by our counsel wholly as per our instructions and the same are read by me as also are read over and explained to me in vernacular language and which I have fully understood and I say and submit that the same are true and correct to the best of my personal knowledge, belief and information. That the documents placed on record are the true copies of the originals thereof. Hence sworn, verified and signed on this [  ] day of [  ], 2026 at Nagpur.",
+  "document_title": "Criminal Application (APL) – synthetic example"
+}

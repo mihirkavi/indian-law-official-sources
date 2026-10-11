@@ -35,6 +35,8 @@ def main():
     skill_zip = DIST / f'indian-law-skill-{version}.zip'
     archive(PLUGIN, plugin_zip, 'indian-law')
     archive(PLUGIN / 'skills/indian-law', skill_zip, 'indian-law')
+    apl_zip = DIST / f'quashing-application-skill-{version}.zip'
+    archive(PLUGIN / 'skills/quashing-application', apl_zip, 'quashing-application')
     with tempfile.TemporaryDirectory() as tmp:
         with zipfile.ZipFile(plugin_zip) as zipped:
             zipped.extractall(tmp)
@@ -45,7 +47,7 @@ def main():
                 'extracted_package_validation':'passed',
                 'files':[{ 'name':p.name, 'bytes':p.stat().st_size,
                            'sha256':hashlib.sha256(p.read_bytes()).hexdigest() }
-                          for p in (plugin_zip, skill_zip)]}
+                          for p in (plugin_zip, skill_zip, apl_zip)]}
     (DIST / 'release.json').write_text(json.dumps(metadata, indent=2)+'\n')
     print(json.dumps(metadata, indent=2))
 

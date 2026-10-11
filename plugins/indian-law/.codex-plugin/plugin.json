@@ -1,7 +1,7 @@
 {
   "name": "indian-law",
-  "version": "0.2.2",
-  "description": "Official-source Indian legal research, judgment briefs, drafting and configurable watchlists, prioritizing Maharashtra civil, criminal and family practice.",
+  "version": "0.3.0",
+  "description": "Official-source Indian legal research, judgment briefs, drafting (including Bombay High Court s.528 BNSS quashing applications in Word format) and configurable watchlists, prioritizing Maharashtra civil, criminal and family practice.",
   "author": {
     "name": "Mihir Kavishwar",
     "url": "https://github.com/mihirkavi"
@@ -13,7 +13,8 @@
     "defaultPrompt": [
       "Research a Maharashtra legal issue using verified official sources",
       "Brief a judgment with original paragraph citations",
-      "Configure a case or legal-development watchlist"
+      "Configure a case or legal-development watchlist",
+      "Draft a Bombay High Court APL quashing an FIR and charge-sheet"
     ]
   },
   "mcpServers": "./.mcp.json",

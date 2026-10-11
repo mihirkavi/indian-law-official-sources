@@ -26,6 +26,7 @@ Load the relevant guidance, not every reference:
 | APIs, website access, authentication, blocked sources | [Access](references/access.md) |
 | Legal research, judgment briefing, amendments, historical law | [Research](references/research.md); [memo](assets/research-memo.md), [brief](assets/judgment-brief.md) |
 | Drafting, civil/criminal/family matters, case status, property records | [Matters](references/matters.md); [pleading](assets/pleading.md) |
+| Bombay High Court criminal application (APL) under s.528 BNSS to quash an FIR/charge-sheet, as a formatted .docx | [quashing-application skill](../quashing-application/SKILL.md) |
 | Configure or run a case/statute/topic watchlist | [Monitoring](references/monitoring.md); [watchlist](assets/watchlist.json) |
 
 Check host capabilities before promising live research, downloads, APIs, scheduling, or language output. Prefer documented, permitted official APIs when usable; use official pages/documents otherwise. Prompt for login only for a verified necessary authenticated operation, through the official service or host's supported authentication. Users enter passwords/OTP privately; never request or save them in chat. A timeout or HTTP 403 alone does not establish login is required. Read the access guidance when any barrier appears.

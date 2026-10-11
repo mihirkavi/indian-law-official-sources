@@ -111,6 +111,11 @@ def validate_package(root: Path) -> list:
             errors.append('Skill frontmatter/name invalid')
     except OSError as exc:
         errors.append(str(exc))
+    for extra in sorted((root / 'skills').glob('*/SKILL.md')):
+        text = extra.read_text(encoding='utf-8')
+        name = extra.parent.name
+        if not text.startswith('---\n') or f'\nname: {name}\n' not in text or '\ndescription: ' not in text:
+            errors.append(f'{name}: skill frontmatter/name invalid')
     for path in root.rglob('*.md'):
         if not inside(path):
             errors.append(f'External symlink: {path.name}')

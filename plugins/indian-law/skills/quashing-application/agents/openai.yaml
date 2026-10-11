@@ -1,0 +1,6 @@
+interface:
+  display_name: "Quashing Application (APL) — Bombay HC"
+  short_description: "Draft a s.528 BNSS quashing application in house Word format"
+  default_prompt: "Use $quashing-application to draft an APL quashing this FIR and charge-sheet from the uploaded record."
+policy:
+  allow_implicit_invocation: true

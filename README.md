@@ -5,7 +5,7 @@
 
 A portable Agent Skill and public-evidence toolset for Indian lawyers, prioritizing **Maharashtra civil, criminal and family/domestic practice**. It works with compatible Codex and Claude Code plugin/Agent Skills hosts. The AI host supplies search, an interactive browser, interpretation, language ability and optional scheduling; this repository supplies legal research workflows, official-source routing, evidence tools and templates.
 
-**Status: experimental, version 0.2.2.** Codex installation, the CLI fallback and an interactive Codex session that called the MCP tools natively to complete a quote-checked brief have been tested. Non-interactive Codex runs block the tools under the default approval policy, and the agent declines rather than guessing. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
+**Status: experimental, version 0.3.0.** Codex installation, the CLI fallback and an interactive Codex session that called the MCP tools natively to complete a quote-checked brief have been tested. Non-interactive Codex runs block the tools under the default approval policy, and the agent declines rather than guessing. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
 
 ## What it does
 
@@ -15,6 +15,7 @@ A portable Agent Skill and public-evidence toolset for Indian lawyers, prioritiz
 | Judgment briefs | Separate facts, issues, holdings, observations, relief and later-treatment limits; verify the original before claiming support. |
 | Statute/version checks | Check amendments, commencement, section exceptions, repeal/savings and the law applicable on the relevant date. |
 | Civil, criminal and family drafting | Prepare lawyer-reviewed outlines/drafts with material missing facts and placeholders; preserve jurisdiction and personal-law distinctions. |
+| Quashing applications (APL) | The `quashing-application` skill drafts a Bombay High Court (Nagpur Bench by default) criminal application under s.528 BNSS as an editable Word file. It uses a bundled house-format template derived from a practising advocate's filing: boxed cause title, Times New Roman 14 pt, double spacing, lettered grounds and prayers, solemn affirmation. It works from the FIR/charge-sheet record, verified authorities and conspicuous placeholders for missing facts. The template contains no client data. |
 | Case/status research | Route to the relevant official court/CNR service, disclose retrieval time and distinguish orders, registry entries and current status. |
 | Property research | Distinguish RoR/mutation, registered deeds, encumbrances and title evidence; route to revenue/registration services. |
 | Languages | Use the host's actual language ability, including Marathi/Hindi/English; label generated translations and preserve original identifiers. No every-language accuracy guarantee. |
@@ -29,7 +30,7 @@ Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) and make
 ### Codex
 
 ```sh
-codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.2.2
+codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.3.0
 codex plugin add indian-law@indian-law-local
 ```
 
@@ -64,6 +65,7 @@ For another compatible host, import `plugins/indian-law/skills/indian-law` into 
 - “Look up this matter using [court/CNR/case number]. Report the observed status timestamp and available orders.”
 - “Review these Maharashtra property documents and identify missing title-chain evidence.”
 - “Configure my case/topic watchlist with my preferred schedule and notifications. Keep checks manual until a supported schedule is confirmed.”
+- “Use quashing-application to draft an APL under s.528 BNSS quashing this FIR and RCC from the uploaded charge-sheet. Verify every authority and flag missing facts.”
 
 Installed-plugin demonstrations are in [docs/installed-demo.md](docs/installed-demo.md). They are usability smoke tests on public URLs, not held-out efficacy comparisons.
 
@@ -109,6 +111,16 @@ python3 plugins/indian-law/skills/indian-law/scripts/casework.py validate-watchl
 
 `access` classifies explicitly observed facts; it does not verify supplied flags. `compare` maintains separate source/item baselines and retains the last successful observation after failed checks; an unchanged URL does not prove unchanged content. The [monitoring guidance](plugins/indian-law/skills/indian-law/references/monitoring.md) and watchlist template explain inputs, timezone and notification settings. No scheduler is bundled and no live monitor was activated during development.
 
+## Quashing application (APL) builder
+
+```sh
+uv run --script plugins/indian-law/skills/quashing-application/scripts/build_apl.py matter/apl-spec.json --out matter/APL-draft.docx
+```
+
+The skill reads the FIR and charge-sheet record and verifies statutes and judgments with the evidence tools. It then writes a JSON matter spec in the shape of the [synthetic example](plugins/indian-law/skills/quashing-application/assets/example-apl.json), and the script renders it with the bundled [house template](plugins/indian-law/skills/quashing-application/assets/apl-template.docx). The template's `[[role]]` paragraphs are formatting prototypes. The script refuses to write into the plugin directory and reports numbered paragraphs, annexure labels and unresolved `[FACT REQUIRED …]` / `[TO BE CONFIRMED …]` placeholders.
+
+The [drafting style](plugins/indian-law/skills/quashing-application/references/drafting-style.md), [analysis checklist](plugins/indian-law/skills/quashing-application/references/quashing-checklist.md) and [authorities checked on 2026-10-11](plugins/indian-law/skills/quashing-application/references/authorities.md) are bundled. The output is a lawyer-review draft, not a filing. Prospects, deponent authorisation and previous-proceedings statements need the advocate's instructions.
+
 ## Does it help?
 
 The [version0.2 comparison](docs/efficacy-v2-report.md) used three frozen human-selected topics and the same model/tool environment:
@@ -127,13 +139,13 @@ Public evaluation material includes frozen prompts, unedited public-topic answer
 
 ```sh
 python3 -m venv .venv
-.venv/bin/python -m pip install pypdf==6.20.0 mcp==2.3.0
+.venv/bin/python -m pip install pypdf==6.20.0 mcp==2.3.0 python-docx==1.2.0
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python scripts/validate_package.py plugins/indian-law
 .venv/bin/python scripts/build_release.py
 ```
 
-**82 tests passed locally**. Checks cover package structure, access/watchlist behavior, guarded fetching, bounded transport, extraction, evidence integrity, exact/wrong-page/absent quotations, documentation links and version consistency. Four independently reviewed retrieval defects were repaired. Live public downloads and SDK stdio round trips passed; the installed Codex CLI fallback passed with network access. See [validation scope](docs/public-validation.md) and [independent retrieval review](docs/retrieval-review.md). CI repeats hermetic checks and archive validation; it does not certify legal accuracy or site availability.
+**88 tests passed locally**. Checks cover package structure, the APL template format and placeholder-only template content, access/watchlist behavior, guarded fetching, bounded transport, extraction, evidence integrity, exact/wrong-page/absent quotations, documentation links and version consistency. Four independently reviewed retrieval defects were repaired. Live public downloads and SDK stdio round trips passed; the installed Codex CLI fallback passed with network access. See [validation scope](docs/public-validation.md) and [independent retrieval review](docs/retrieval-review.md). CI repeats hermetic checks and archive validation; it does not certify legal accuracy or site availability.
 
 [MCP SDK](https://py.sdk.modelcontextprotocol.io/), [Agent Plugins specification](https://agent-plugins.org/), [Codex packaging](https://developers.openai.com/plugins/build/plugins) and [Claude Code manifest documentation](https://code.claude.com/docs/en/plugins-reference) describe the underlying interfaces. Host/browser/scheduler capabilities and legal-source access may change.
 
