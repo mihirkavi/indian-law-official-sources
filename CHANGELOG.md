@@ -1,8 +1,12 @@
 # Changelog
 
+## 0.2.2 — 2026-10-11
+
+Verified native Claude Code use: a headless Claude Code 2.1.295 prompt invoked the skill and called `fetch_document`, `read_document` and `check_quote` to produce a quote-checked judgment brief. Documentation status updated accordingly. Retrieval behavior is unchanged.
+
 ## 0.2.1 — 2026-10-10
 
-First public GitHub release. Adds a Claude marketplace description, installed-host demonstrations (native Codex MCP calls, Claude Code plugin loading and MCP connection, a quote-checked judgment brief), a public validation summary and documentation link/version regression tests. Also adds repository/author/license/discovery metadata, public installation instructions, curated validation and efficacy reports, CI, and an installed-plugin demonstration. Retrieval behavior is unchanged from 0.2.0; the earlier comparison applies to that recorded snapshot.
+First public GitHub release. Adds a Claude marketplace description, installed-host demonstrations (native Codex MCP calls, native Claude Code MCP calls producing a quote-checked judgment brief), a public validation summary and documentation link/version regression tests. Also adds repository/author/license/discovery metadata, public installation instructions, curated validation and efficacy reports, CI, and an installed-plugin demonstration. Retrieval behavior is unchanged from 0.2.0; the earlier comparison applies to that recorded snapshot.
 
 ## 0.2.0 — 2026-10-10
 

@@ -5,7 +5,7 @@
 
 A portable Agent Skill and public-evidence toolset for Indian lawyers, prioritizing **Maharashtra civil, criminal and family/domestic practice**. It works with compatible Codex and Claude Code plugin/Agent Skills hosts. The AI host supplies search, an interactive browser, interpretation, language ability and optional scheduling; this repository supplies legal research workflows, official-source routing, evidence tools and templates.
 
-**Status: experimental, version 0.2.1.** Codex installation, native Codex MCP tool calls and the CLI fallback have been tested; a non-interactive Codex run correctly declined to brief when its approval policy blocked the tools. Claude Code 2.1.295 validates and loads the plugin and connects its MCP server, and a Claude Code session completed a quote-checked judgment brief through the CLI route; native MCP calls from a Claude Code prompt are untested. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
+**Status: experimental, version 0.2.2.** Codex installation, native Codex MCP tool calls and the CLI fallback have been tested; a non-interactive Codex run correctly declined to brief when its approval policy blocked the tools. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
 
 ## What it does
 
@@ -29,7 +29,7 @@ Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) and make
 ### Codex
 
 ```sh
-codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.2.1
+codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.2.2
 codex plugin add indian-law@indian-law-local
 ```
 
@@ -42,7 +42,7 @@ Invoke `indian-law` explicitly and refresh/restart the host if necessary. The ma
 /plugin install indian-law@indian-law-local
 ```
 
-Then invoke the installed `indian-law` skill using the host's plugin command. These instructions target Claude Code, not a promise of Claude web support. Browser authentication and tool capabilities are client-specific. To try it without installing, start Claude Code with `claude --plugin-dir plugins/indian-law` from a checkout. Plugin loading and MCP connection were verified; a full prompt-driven session remains untested.
+Then invoke the installed `indian-law` skill using the host's plugin command. These instructions target Claude Code, not a promise of Claude web support. Browser authentication and tool capabilities are client-specific. To try it without installing, start Claude Code with `claude --plugin-dir plugins/indian-law` from a checkout. A headless prompt-driven session with native MCP tool calls was verified.
 
 ### Local checkout or other Agent Skills hosts
 
@@ -119,7 +119,7 @@ The [version0.2 comparison](docs/efficacy-v2-report.md) used three frozen human-
 | Short official-source instruction | 12/18 | 0 |
 | Plugin0.2 | 14/18 | 1 |
 
-The gain was a public Supreme Court original arising from an Alibag partition suit, independently downloaded and verified. Correctness/calibration tied. Umerkhed and Sangli/Yavatmal requests remained unresolved; no local trial-court originals or private records were retrieved. This small, partially blinded AI assessment is not evidence of generally better legal accuracy, consumer ChatGPT/Claude performance or privileged access. The [earlier eight-task comparison](docs/efficacy-report.md) showed no benefit. Version0.2.1 changes publication metadata/documentation, not retrieval behavior.
+The gain was a public Supreme Court original arising from an Alibag partition suit, independently downloaded and verified. Correctness/calibration tied. Umerkhed and Sangli/Yavatmal requests remained unresolved; no local trial-court originals or private records were retrieved. This small, partially blinded AI assessment is not evidence of generally better legal accuracy, consumer ChatGPT/Claude performance or privileged access. The [earlier eight-task comparison](docs/efficacy-report.md) showed no benefit. Versions 0.2.1 and 0.2.2 change publication metadata, documentation and host verification, not retrieval behavior.
 
 Public evaluation material includes frozen prompts, unedited public-topic answers, curated action summaries, scores and assessor rationale under `eval/v2/`. Raw host sessions, downloaded records and user conversation text remain excluded; summaries are not full network logs.
 

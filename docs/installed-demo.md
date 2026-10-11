@@ -49,6 +49,6 @@ Loaded for one session with `--plugin-dir plugins/indian-law` (no permanent inst
 | `claude plugin validate .` and `claude plugin validate plugins/indian-law` | Passed. The only warning, a missing marketplace description, was fixed |
 | `claude plugin list` | `indian-law@inline` 0.2.1 loaded |
 | `claude mcp list` | `plugin:indian-law:indian-law-evidence` started via `uv run --script ${CLAUDE_PLUGIN_ROOT}/…/retrieval_server.py` and reported **Connected**, including from a path containing spaces |
-| Headless prompt invoking the skill/tools | **Not run**: the standalone CLI's OAuth session had expired |
+| Headless prompt (`claude -p --plugin-dir …`), after CLI sign-in | **Passed**: invoked skill `indian-law:indian-law`, read the brief template, then natively called `fetch_document`, `read_document` (4 times) and `check_quote` on the same Supreme Court order. Produced a brief with verified caption, date, bench and disposition. The operative order in para 28 was quote-checked as `matched` on PDF page 24. The brief disclosed that pages 4–23 were unread, and that it had not verified certification, later treatment or the diary-number mapping. 11 turns |
 
-The identical stdio launch command was then driven by an MCP SDK client; see [public validation](public-validation.md).
+Only the listed tools were permitted for that run. The identical stdio launch command was also driven by an MCP SDK client; see [public validation](public-validation.md).

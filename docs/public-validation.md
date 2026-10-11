@@ -21,10 +21,10 @@ These use ordinary public HTTPS downloads. Results reflect the sites on this dat
 | `check_quote` “THE BHARATIYA NYAYA SANHITA” on PDF page 1 and page 40 | `page_mismatch`, reporting actual page 2 |
 | `check_quote` with absent text | `not_found`; no fuzzy repair |
 | CLI fallback `check-quote` on PDF page 2 | `matched` |
-| Complete judgment brief (Claude Code, CLI route); Codex native MCP; Claude Code plugin loading | See [installed demonstrations](installed-demo.md) |
+| Claude Code prompt calling the plugin MCP tools natively; CLI-route brief; Codex native MCP | See [installed demonstrations](installed-demo.md) |
 
 ## Not established
 
-- A Claude Code session calling the plugin's MCP tools natively from a prompt (the standalone CLI was not signed in; loading and connection were verified separately).
+- A non-interactive Codex run completing a brief: its default approval policy blocks the MCP tools, and the agent correctly declined.
 - Legal accuracy, currentness, paragraph numbering, certified copies or exhaustive coverage.
 - Availability of any site after this date, or any authenticated/CAPTCHA-protected service.

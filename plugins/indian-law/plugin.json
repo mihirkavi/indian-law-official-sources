@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "indian-law",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Official-source Indian legal research, judgment briefs, drafting and configurable watchlists, prioritizing Maharashtra civil, criminal and family practice.",
   "author": {
     "name": "Mihir Kavishwar",
