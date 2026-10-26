@@ -1,51 +1,98 @@
-# Indian Law — Official Sources
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/assets/banner-dark.png">
+    <img alt="Indian Law, Official Sources: Indian legal research, from the original. An agent plugin that works from official judgments and statutes, saves the originals and checks quotes. Supreme Court, Bombay High Court, India Code, Maharashtra-first, Codex and Claude Code." src=".github/assets/banner-light.png" width="100%">
+  </picture>
+</p>
 
-[![CI](https://github.com/mihirkavi/indian-law-official-sources/actions/workflows/ci.yml/badge.svg)](https://github.com/mihirkavi/indian-law-official-sources/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+<p align="center">
+  <strong>Research Indian law from the official record, not from memory.</strong><br>
+  An Agent Skill and public-evidence toolset for Codex and Claude Code that helps Indian lawyers research, brief and draft from government and court originals, with <strong>Maharashtra civil, criminal and family practice</strong> first.
+</p>
 
-A portable Agent Skill and public-evidence toolset for Indian lawyers, prioritizing **Maharashtra civil, criminal and family/domestic practice**. It works with compatible Codex and Claude Code plugin/Agent Skills hosts. The AI host supplies search, an interactive browser, interpretation, language ability and optional scheduling; this repository supplies legal research workflows, official-source routing, evidence tools and templates.
+<p align="center">
+  <a href="#install"><strong>Install</strong></a> ·
+  <a href="#what-it-helps-with"><strong>Features</strong></a> ·
+  <a href="plugins/indian-law/skills/indian-law/references/sources.json"><strong>Sources</strong></a> ·
+  <a href="docs/efficacy-v2-report.md"><strong>Evaluation</strong></a> ·
+  <a href="PRIVACY.md"><strong>Data handling</strong></a> ·
+  <a href="CONTRIBUTING.md"><strong>Contribute</strong></a>
+</p>
 
-**Status: experimental, version 0.3.0.** Codex installation, the CLI fallback and an interactive Codex session that called the MCP tools natively to complete a quote-checked brief have been tested. Non-interactive Codex runs block the tools under the default approval policy, and the agent declines rather than guessing. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless Claude Code prompt called its MCP tools natively to produce a quote-checked judgment brief. See [installed demonstrations](docs/installed-demo.md). This is not a government product, certified legal database, filing service or a plugin that automatically works in every AI application.
+<p align="center">
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111111?style=flat-square"></a>
+  <img alt="Codex and Claude Code" src="https://img.shields.io/badge/Codex%20%C2%B7%20Claude%20Code%20%C2%B7%20MCP-111111?style=flat-square">
+  <img alt="Status: experimental, version 0.3.0" src="https://img.shields.io/badge/status-experimental%20v0.3.0-6b6b6b?style=flat-square">
+  <a href="https://github.com/mihirkavi/indian-law-official-sources/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/mihirkavi/indian-law-official-sources/ci.yml?branch=main&style=flat-square&label=CI&color=111111"></a>
+</p>
 
-## What it does
+> [!IMPORTANT]
+> **Not legal advice.** This is a research and drafting aid for lawyers. A qualified advocate must review every interpretation, citation and draft before it is relied on or filed. It is not a government product, a certified legal database or a filing service, and an exact text match does not prove a legal holding, paragraph number or that the law is current.
 
-| Capability | Behavior |
-| --- | --- |
-| Official-source research | Use original government/judicial documents; retain links, dates, pinpoints, provenance and gaps. Exclude commercial/private legal databases and blogs. |
-| Judgment briefs | Separate facts, issues, holdings, observations, relief and later-treatment limits; verify the original before claiming support. |
-| Statute/version checks | Check amendments, commencement, section exceptions, repeal/savings and the law applicable on the relevant date. |
-| Civil, criminal and family drafting | Prepare lawyer-reviewed outlines/drafts with material missing facts and placeholders; preserve jurisdiction and personal-law distinctions. |
-| Quashing applications (APL) | The `quashing-application` skill drafts a Bombay High Court (Nagpur Bench by default) criminal application under s.528 BNSS as an editable Word file. It uses a bundled house-format template derived from a practising advocate's filing: boxed cause title, Times New Roman 14 pt, double spacing, lettered grounds and prayers, solemn affirmation. It works from the FIR/charge-sheet record, verified authorities and conspicuous placeholders for missing facts. The template contains no client data. |
-| Case/status research | Route to the relevant official court/CNR service, disclose retrieval time and distinguish orders, registry entries and current status. |
-| Property research | Distinguish RoR/mutation, registered deeds, encumbrances and title evidence; route to revenue/registration services. |
-| Languages | Use the host's actual language ability, including Marathi/Hindi/English; label generated translations and preserve original identifiers. No every-language accuracy guarantee. |
-| Configurable watchlists | User-selected cases/topics, timezone, frequency and notification settings. Manual by default; an actual supported host scheduler must confirm any recurring job. |
-| Public evidence retrieval | Download approved public HTTPS documents, preserve original bytes/origin/time/hashes, extract static HTML/PDF text and read saved pages. |
-| Exact quotation checks | Match normalized quotation text and viewer-page indices against saved extraction; reject wrong-page/absent text without fuzzy repair. This does not verify legal meaning or paragraph numbers. |
+<p align="center">
+  <img alt="A terminal downloading a public Supreme Court of India judgment with origin, hash and page count recorded, then checking a quotation: it matches on PDF page 4 and returns page_mismatch when claimed on page 2" src=".github/assets/terminal.png" width="100%">
+  <br><sub>A real run of the public-evidence CLI against a public Supreme Court of India judgment (output abridged). It keeps the original, records its hash and refuses a quote placed on the wrong page.</sub>
+</p>
+
+## Why Indian Law · Official Sources
+
+General AI assistants can sound confident about Indian law while citing judgments they never read, sections that were renumbered under the BNS and BNSS, or blog summaries instead of the original.
+
+**This plugin makes the assistant work from the official record.** It routes research to government and court sources, downloads the public original, keeps its origin, time and hash, and checks quotations word for word against the saved text. It then helps prepare research memos, judgment briefs and lawyer-review drafts with clear placeholders for missing facts.
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>🏛️ Official sources only</h3>
+      India Code, gazettes, the Supreme Court, Bombay High Court, eCourts and Maharashtra departments. Commercial databases and blogs are deliberately excluded.
+    </td>
+    <td width="33%" valign="top">
+      <h3>🔍 Every quote checked</h3>
+      Saved originals with hashes, and exact quotation and page checks that reject wrong-page or absent text instead of "fixing" it.
+    </td>
+    <td width="33%" valign="top">
+      <h3>✍️ Drafts a lawyer can finish</h3>
+      Memos, briefs and pleadings, including a Bombay High Court s.528 BNSS quashing application as an editable Word file.
+    </td>
+  </tr>
+</table>
+
+## What it helps with
+
+| | Capability | What it does |
+| --- | --- | --- |
+| 📚 | **Official-source research** | Works from original government and court documents, keeping links, dates, pinpoints, provenance and gaps |
+| ⚖️ | **Judgment briefs** | Separates facts, issues, holdings, observations and relief, and verifies the original before claiming support |
+| 📜 | **Statute and version checks** | Amendments, commencement, exceptions, repeal and savings, and the law that applied on a given date |
+| ✍️ | **Civil, criminal and family drafting** | Lawyer-review outlines and drafts with placeholders for missing facts, keeping jurisdiction and personal-law distinctions |
+| 🗂️ | **Quashing applications (APL)** | Bombay High Court (Nagpur Bench by default) criminal application under s.528 BNSS, rendered from a house-format Word template with no client data |
+| 🔎 | **Case status and property research** | Routes to official court, CNR, revenue and registration services, and distinguishes orders, registry entries, mutations and title evidence |
+| 🌐 | **Languages** | Marathi, Hindi and English using the host model's own ability; generated translations are labelled |
+| 🔔 | **Watchlists** | Configurable case and topic watchlists, manual by default; no scheduler is bundled |
 
 ## Install
 
-Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) and make it available on the AI host's PATH if using the bundled public-evidence tools. The scripts have pinned dependencies and lockfiles; the first run can download Python/runtime packages. Retrieval/MCP require Python3.10+; the offline helper supports Python3.9+. The instruction-only skill still needs the host's own research tools.
+Install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) and put it on the AI host's PATH for the evidence tools (Python 3.10+; the offline helper runs on 3.9+).
 
-### Codex
-
-```sh
-codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.3.0
-codex plugin add indian-law@indian-law-local
-```
-
-Invoke `indian-law` explicitly and refresh/restart the host if necessary. The marketplace identifier `indian-law-local` is retained for compatibility with earlier installations; it also identifies this public repository's catalog. Compatible Codex versions accept GitHub repository marketplace sources. Public GitHub availability does not mean listing in OpenAI's universal plugin directory.
-
-### Claude Code
+**Claude Code**
 
 ```text
 /plugin marketplace add mihirkavi/indian-law-official-sources
 /plugin install indian-law@indian-law-local
 ```
 
-Then invoke the installed `indian-law` skill using the host's plugin command. These instructions target Claude Code, not a promise of Claude web support. Browser authentication and tool capabilities are client-specific. To try it without installing, start Claude Code with `claude --plugin-dir plugins/indian-law` from a checkout. A headless prompt-driven session with native MCP tool calls was verified.
+**Codex**
 
-### Local checkout or other Agent Skills hosts
+```sh
+codex plugin marketplace add mihirkavi/indian-law-official-sources --ref v0.3.0
+codex plugin add indian-law@indian-law-local
+```
+
+Then invoke the `indian-law` skill (or `quashing-application`). To try it without installing, run `claude --plugin-dir plugins/indian-law` from a checkout.
+
+<details>
+<summary><strong>Local checkout and other Agent Skills hosts</strong></summary>
+<br>
 
 ```sh
 git clone https://github.com/mihirkavi/indian-law-official-sources.git
@@ -54,54 +101,65 @@ codex plugin marketplace add .
 codex plugin add indian-law@indian-law-local
 ```
 
-For another compatible host, import `plugins/indian-law/skills/indian-law` into its documented skill location. The release's skill ZIP contains that directory. The full plugin ZIP contains portable, Codex and Claude manifests; repository marketplace installation uses the full checkout. Manual MCP setup uses the installed absolute path to `scripts/retrieval_server.py`; a shell-capable host can use the CLI when native MCP tools are absent.
+For another compatible host, import `plugins/indian-law/skills/indian-law` into its skill location; the release's skill ZIP contains that directory. The full plugin ZIP contains portable, Codex and Claude manifests. Manual MCP setup uses the installed absolute path to `scripts/retrieval_server.py`, and a shell-capable host can use the CLI when native MCP tools are absent.
+
+The marketplace name `indian-law-local` is kept for compatibility with earlier installations. A public GitHub repository is not a listing in OpenAI's or Anthropic's plugin directories, and Claude Code instructions are not a promise of Claude web support.
+
+</details>
 
 ## Try it
 
-- “Use indian-law to research this Maharashtra civil issue under the law applicable on [date]. Verify original sources and adverse authority; give a memo with links and pinpoints.”
-- “Brief [official judgment URL/citation]. Verify the caption, holding and relief, and disclose anything you cannot inspect.”
-- “Which procedure applies to an investigation pending before 1 July 2024? Check commencement and savings before mapping sections.”
-- “Prepare a Marathi maintenance-application outline. Clarify personal law, forum, relationships, income, children and existing proceedings.”
-- “Look up this matter using [court/CNR/case number]. Report the observed status timestamp and available orders.”
-- “Review these Maharashtra property documents and identify missing title-chain evidence.”
-- “Configure my case/topic watchlist with my preferred schedule and notifications. Keep checks manual until a supported schedule is confirmed.”
-- “Use quashing-application to draft an APL under s.528 BNSS quashing this FIR and RCC from the uploaded charge-sheet. Verify every authority and flag missing facts.”
+- *"Use indian-law to research this Maharashtra civil issue under the law applicable on [date]. Verify original sources and adverse authority; give a memo with links and pinpoints."*
+- *"Brief [official judgment URL or citation]. Verify the caption, holding and relief, and disclose anything you cannot inspect."*
+- *"Which procedure applies to an investigation pending before 1 July 2024? Check commencement and savings before mapping sections."*
+- *"Use quashing-application to draft an APL under s.528 BNSS from the uploaded charge-sheet. Verify every authority and flag missing facts."*
 
-Installed-plugin demonstrations are in [docs/installed-demo.md](docs/installed-demo.md). They are usability smoke tests on public URLs, not held-out efficacy comparisons.
+More prompts and recorded runs are in [installed demonstrations](docs/installed-demo.md). They are usability smoke tests on public URLs, not efficacy comparisons.
 
-## Sources, login and APIs
+## How it works
 
-The [complete source inventory](plugins/indian-law/skills/indian-law/references/sources.json) records publisher, official provenance, current/legacy URLs, enabled/excluded status, access, API assessment and review date. The [source audit](docs/source-audit.md) explains unresolved candidates and corrections to unverified coverage claims. Inventory dates establish discovery review, not the current legal status of every document.
+The **AI host** (Codex or Claude Code) supplies search, the browser, interpretation and language ability. **This repository** supplies the research workflows, official-source routing, templates and four evidence tools, available as a CLI or as local MCP tools:
 
-Sources include India Code; central/Maharashtra gazettes; Supreme Court/e-SCR/library; Bombay High Court; eCourts/NJDG; Maharashtra law/home departments; MHA; DoLR/DILRMP; Mahabhumi/registration services; and officially linked state land directories. Supplied private/open-access/commercial sources are explicitly excluded. Directory entries are routes, not validated live connectors or completed case searches.
-
-**No authenticated official API adapter is enabled.** Prefer a documented official API only after contract, permission, eligibility and usable operations are verified. eCourts/NJDG describe restricted institutional access; usable lawyer-context entitlement was not established. Public PDF hosting on `api.sci.gov.in` is not a public judgment-search API. The bundled tool uses ordinary public HTTPS downloads.
-
-Prompt for private sign-in only when the requested operation explicitly requires it, for example a signed land-record download. A CAPTCHA, fee, HTTP403, timeout or restricted API is not automatically a login requirement. Users enter passwords/OTP privately on the official service. Credentials and cookies are not handled by this public retrieval engine. Purchases, filing, registration changes and external messages require their own authorization.
-
-## Public-evidence CLI and MCP
+| CLI command | MCP tool | What it does |
+| --- | --- | --- |
+| `sources` | `list_sources` | Lists the enabled official sources and their permitted hosts |
+| `fetch` | `fetch_document` | Downloads a public HTTPS original into your evidence folder, with origin, time and hashes |
+| `read` | `read_document` | Reads the saved text by query or PDF page |
+| `check-quote` | `check_quote` | Checks an exact quotation and page against the saved text |
 
 ```sh
-uv run --script plugins/indian-law/skills/indian-law/scripts/retrieval.py sources --store /absolute/matter/evidence
-uv run --script plugins/indian-law/skills/indian-law/scripts/retrieval.py fetch --store /absolute/matter/evidence < request.json
+uv run --script plugins/indian-law/skills/indian-law/scripts/retrieval.py fetch --store /absolute/matter/evidence <<'EOF'
+{"source_id": "sci", "url": "https://api.sci.gov.in/supremecourt/2016/13498/13498_2016_Judgement_21-Aug-2018.pdf"}
+EOF
 ```
 
-Example `request.json` with an actual public MHA notification:
+Every evidence operation needs an explicit folder you authorise. See [retrieval contracts and examples](plugins/indian-law/skills/indian-law/references/retrieval.md).
 
-```json
-{
-  "source_id": "mha",
-  "url": "https://www.mha.gov.in/sites/default/files/BhartiyaNyayaSanhita_24022024.pdf"
-}
-```
+<details>
+<summary><strong>Sources, sign-in and official APIs</strong></summary>
+<br>
 
-Commands are `sources`, `fetch`, `read` and `check-quote`. Optional stdio tools are `list_sources`, `fetch_document`, `read_document` and `check_quote`. All evidence operations require an explicit authorized directory. See [retrieval contracts and examples](plugins/indian-law/skills/indian-law/references/retrieval.md).
+The [source inventory](plugins/indian-law/skills/indian-law/references/sources.json) records each publisher, its official provenance, current and legacy URLs, access, API assessment and review date. The [source audit](docs/source-audit.md) explains unresolved candidates. Sources include India Code, central and Maharashtra gazettes, the Supreme Court and e-SCR, Bombay High Court, eCourts and NJDG, Maharashtra law and home departments, MHA, DoLR/DILRMP, Mahabhumi and registration services. Directory entries are routes, not validated live connectors.
 
-Downloads check source-specific HTTPS origins, redirects and public DNS destinations, with byte/time bounds. PDF extraction is subprocess-bounded; scans need another OCR workflow. Static HTML extraction does not execute JavaScript, submit a case search or complete CAPTCHA. A known official legacy host can still be outside a configured tool origin; verify provenance and use a supported public browser route rather than disabling origin checks.
+**No authenticated official API adapter is enabled.** eCourts and NJDG describe restricted institutional access, and public PDF hosting on `api.sci.gov.in` is not a judgment-search API. The tools use ordinary public HTTPS downloads.
 
-Saved hashes detect inconsistency, not malicious replacement of both evidence and metadata. Viewer-page indices and PDF labels do not automatically identify printed pages. A quotation may be a submission or a quote of another case; inspect its context. No digital signature, certified copy, original case identity, legal holding, currentness, exhaustive citator coverage or title certification is guaranteed.
+Private sign-in is requested only when an operation truly needs it, such as a signed land-record download. A CAPTCHA, fee, HTTP 403 or timeout is not automatically a login requirement. You enter passwords and OTPs privately on the official service; this engine never handles credentials or cookies. Purchases, filing, registration changes and outgoing messages need their own authorisation.
 
-## Offline access and monitoring helper
+</details>
+
+<details>
+<summary><strong>Evidence guarantees and their limits</strong></summary>
+<br>
+
+Downloads check source-specific HTTPS origins, every redirect and public DNS destinations, with byte and time limits. PDF extraction runs in a bounded subprocess; scans need a separate OCR workflow. Static HTML extraction does not run JavaScript, submit case searches or complete CAPTCHAs.
+
+Saved hashes detect inconsistency, not malicious replacement of both evidence and metadata. PDF viewer pages are not printed page numbers. A matching quote may be a party's submission or a quote from another case, so read its context. No digital signature, certified copy, case identity, legal holding, currentness, citator coverage or title certification is guaranteed.
+
+</details>
+
+<details>
+<summary><strong>Offline access and watchlist helper</strong></summary>
+<br>
 
 ```sh
 python3 plugins/indian-law/skills/indian-law/scripts/casework.py access < observation.json
@@ -109,33 +167,37 @@ python3 plugins/indian-law/skills/indian-law/scripts/casework.py compare < compa
 python3 plugins/indian-law/skills/indian-law/scripts/casework.py validate-watchlist < watchlist.json
 ```
 
-`access` classifies explicitly observed facts; it does not verify supplied flags. `compare` maintains separate source/item baselines and retains the last successful observation after failed checks; an unchanged URL does not prove unchanged content. The [monitoring guidance](plugins/indian-law/skills/indian-law/references/monitoring.md) and watchlist template explain inputs, timezone and notification settings. No scheduler is bundled and no live monitor was activated during development.
+`access` classifies observed facts; it does not verify supplied flags. `compare` keeps separate source and item baselines and retains the last successful observation after failed checks; an unchanged URL does not prove unchanged content. See the [monitoring guidance](plugins/indian-law/skills/indian-law/references/monitoring.md). No scheduler is bundled and no live monitor was activated during development.
 
-## Quashing application (APL) builder
+</details>
+
+<details>
+<summary><strong>Quashing application (APL) builder</strong></summary>
+<br>
 
 ```sh
 uv run --script plugins/indian-law/skills/quashing-application/scripts/build_apl.py matter/apl-spec.json --out matter/APL-draft.docx
 ```
 
-The skill reads the FIR and charge-sheet record and verifies statutes and judgments with the evidence tools. It then writes a JSON matter spec in the shape of the [synthetic example](plugins/indian-law/skills/quashing-application/assets/example-apl.json), and the script renders it with the bundled [house template](plugins/indian-law/skills/quashing-application/assets/apl-template.docx). The template's `[[role]]` paragraphs are formatting prototypes. The script refuses to write into the plugin directory and reports numbered paragraphs, annexure labels and unresolved `[FACT REQUIRED …]` / `[TO BE CONFIRMED …]` placeholders.
+The skill reads the FIR and charge-sheet record, verifies statutes and judgments with the evidence tools, and writes a JSON matter spec shaped like the [synthetic example](plugins/indian-law/skills/quashing-application/assets/example-apl.json). The script renders it with the bundled [house template](plugins/indian-law/skills/quashing-application/assets/apl-template.docx), derived from a practising advocate's filing format (boxed cause title, Times New Roman 14 pt, double spacing, lettered grounds and prayers, solemn affirmation). It refuses to write into the plugin directory and reports numbered paragraphs, annexure labels and unresolved `[FACT REQUIRED …]` / `[TO BE CONFIRMED …]` placeholders.
 
 The [drafting style](plugins/indian-law/skills/quashing-application/references/drafting-style.md), [analysis checklist](plugins/indian-law/skills/quashing-application/references/quashing-checklist.md) and [authorities checked on 2026-10-11](plugins/indian-law/skills/quashing-application/references/authorities.md) are bundled. The output is a lawyer-review draft, not a filing. Prospects, deponent authorisation and previous-proceedings statements need the advocate's instructions.
 
+</details>
+
 ## Does it help?
 
-The [version0.2 comparison](docs/efficacy-v2-report.md) used three frozen human-selected topics and the same model/tool environment:
+A small [version 0.2 comparison](docs/efficacy-v2-report.md) used three frozen, human-selected topics in the same model and tool environment:
 
 | Arm | Rubric points | Verified relevant case originals |
 | --- | ---: | ---: |
 | Ordinary AI, no plugin | 12/18 | 0 |
 | Short official-source instruction | 12/18 | 0 |
-| Plugin0.2 | 14/18 | 1 |
+| **Plugin 0.2** | **14/18** | **1** |
 
-The gain was a public Supreme Court original arising from an Alibag partition suit, independently downloaded and verified. Correctness/calibration tied. Umerkhed and Sangli/Yavatmal requests remained unresolved; no local trial-court originals or private records were retrieved. This small, partially blinded AI assessment is not evidence of generally better legal accuracy, consumer ChatGPT/Claude performance or privileged access. The [earlier eight-task comparison](docs/efficacy-report.md) showed no benefit. Versions 0.2.1 and 0.2.2 change publication metadata, documentation and host verification, not retrieval behavior.
+The gain was one public Supreme Court original, independently downloaded and verified. Correctness and calibration tied, and two local requests stayed unresolved. This small, partially blinded assessment is **not** evidence of generally better legal accuracy. The [earlier eight-task comparison](docs/efficacy-report.md) showed no benefit. Frozen prompts, answers, scores and rationale are under `eval/v2/`.
 
-Public evaluation material includes frozen prompts, unedited public-topic answers, curated action summaries, scores and assessor rationale under `eval/v2/`. Raw host sessions, downloaded records and user conversation text remain excluded; summaries are not full network logs.
-
-## Development and validation
+## Development
 
 ```sh
 python3 -m venv .venv
@@ -145,12 +207,25 @@ python3 -m venv .venv
 .venv/bin/python scripts/build_release.py
 ```
 
-**88 tests passed locally**. Checks cover package structure, the APL template format and placeholder-only template content, access/watchlist behavior, guarded fetching, bounded transport, extraction, evidence integrity, exact/wrong-page/absent quotations, documentation links and version consistency. Four independently reviewed retrieval defects were repaired. Live public downloads and SDK stdio round trips passed; the installed Codex CLI fallback passed with network access. See [validation scope](docs/public-validation.md) and [independent retrieval review](docs/retrieval-review.md). CI repeats hermetic checks and archive validation; it does not certify legal accuracy or site availability.
+88 tests cover package structure, the APL template, access and watchlist behaviour, guarded fetching, extraction, evidence integrity, quotation checks, documentation links and version consistency. CI repeats the hermetic checks; it does not certify legal accuracy or site availability. See [validation scope](docs/public-validation.md) and the [independent retrieval review](docs/retrieval-review.md).
 
-[MCP SDK](https://py.sdk.modelcontextprotocol.io/), [Agent Plugins specification](https://agent-plugins.org/), [Codex packaging](https://developers.openai.com/plugins/build/plugins) and [Claude Code manifest documentation](https://code.claude.com/docs/en/plugins-reference) describe the underlying interfaces. Host/browser/scheduler capabilities and legal-source access may change.
+## Honest status
+
+**Experimental, version 0.3.0.**
+
+- **Tested:** Codex installation, the CLI fallback, and an interactive Codex session that called the MCP tools to complete a quote-checked brief. Claude Code 2.1.295 validates, installs and loads the plugin, and a headless prompt called its MCP tools to produce a quote-checked judgment brief ([demonstrations](docs/installed-demo.md)).
+- **Limits:** non-interactive Codex runs block the tools under the default approval policy, and the agent then declines rather than guessing. It does not work automatically in every AI app.
+- No authenticated official API, OCR, CAPTCHA solving, scheduler or private court records.
+- Evaluation is small and shows one retrieval gain, not better legal accuracy overall.
+- Official websites change: an example MHA PDF link used in earlier docs now returns HTTP 404, so links in the source inventory need periodic review.
 
 ## Data, license and support
 
-Read [data handling](PRIVACY.md), [contribution guidance](CONTRIBUTING.md) and [changes](CHANGELOG.md). The package code and documentation are [MIT licensed](LICENSE); that license does not relicense linked government records, legal documents, third-party dependencies or trademarks. Government records are not bundled. A lawyer must review interpretations and drafts before use.
+Read [data handling](PRIVACY.md), [contribution guidance](CONTRIBUTING.md) and [changes](CHANGELOG.md). The code and documentation are [MIT licensed](LICENSE); that does not relicense linked government records, legal documents, third-party dependencies or trademarks. Government records are not bundled, and no government affiliation is claimed.
 
 Maintained by [Mihir Kavishwar](https://github.com/mihirkavi). Report reproducible public examples through [GitHub issues](https://github.com/mihirkavi/indian-law-official-sources/issues), without client files, identifiers or credentials.
+
+<p align="center">
+  <br>
+  <sub><strong>Indian Law · Official Sources</strong> · Cite the original, every time.</sub>
+</p>
