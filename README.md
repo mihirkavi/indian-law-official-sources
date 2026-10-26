@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/assets/banner-dark.png">
-    <img alt="Indian Law, Official Sources: Indian legal research, from the original. An agent plugin that works from official judgments and statutes, saves the originals and checks quotes. Supreme Court, Bombay High Court, India Code, Maharashtra-first, Codex and Claude Code." src=".github/assets/banner-light.png" width="100%">
+    <img alt="Indian Law, Official Sources: legal research, from the original. An agent plugin that works from official judgments and statutes, saves the originals and checks quotes. Supreme Court, Bombay High Court, India Code, Maharashtra-first, Codex and Claude Code." src=".github/assets/banner-light.png" width="100%">
   </picture>
 </p>
 
@@ -20,10 +20,10 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-111111?style=flat-square"></a>
-  <img alt="Codex and Claude Code" src="https://img.shields.io/badge/Codex%20%C2%B7%20Claude%20Code%20%C2%B7%20MCP-111111?style=flat-square">
-  <img alt="Status: experimental, version 0.3.0" src="https://img.shields.io/badge/status-experimental%20v0.3.0-6b6b6b?style=flat-square">
-  <a href="https://github.com/mihirkavi/indian-law-official-sources/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/mihirkavi/indian-law-official-sources/ci.yml?branch=main&style=flat-square&label=CI&color=111111"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8a1c2b?style=flat-square"></a>
+  <img alt="Codex and Claude Code" src="https://img.shields.io/badge/Codex%20%C2%B7%20Claude%20Code%20%C2%B7%20MCP-1b2333?style=flat-square">
+  <img alt="Status: experimental, version 0.3.0" src="https://img.shields.io/badge/status-experimental%20v0.3.0-5d6270?style=flat-square">
+  <a href="https://github.com/mihirkavi/indian-law-official-sources/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/mihirkavi/indian-law-official-sources/ci.yml?branch=main&style=flat-square&label=CI&color=1b2333"></a>
 </p>
 
 > [!IMPORTANT]
@@ -43,15 +43,15 @@ General AI assistants can sound confident about Indian law while citing judgment
 <table>
   <tr>
     <td width="33%" valign="top">
-      <h3>🏛️ Official sources only</h3>
+      <h3>Official sources only</h3>
       India Code, gazettes, the Supreme Court, Bombay High Court, eCourts and Maharashtra departments. Commercial databases and blogs are deliberately excluded.
     </td>
     <td width="33%" valign="top">
-      <h3>🔍 Every quote checked</h3>
+      <h3>Every quote checked</h3>
       Saved originals with hashes, and exact quotation and page checks that reject wrong-page or absent text instead of "fixing" it.
     </td>
     <td width="33%" valign="top">
-      <h3>✍️ Drafts a lawyer can finish</h3>
+      <h3>Drafts a lawyer can finish</h3>
       Memos, briefs and pleadings, including a Bombay High Court s.528 BNSS quashing application as an editable Word file.
     </td>
   </tr>
@@ -61,14 +61,14 @@ General AI assistants can sound confident about Indian law while citing judgment
 
 | | Capability | What it does |
 | --- | --- | --- |
-| 📚 | **Official-source research** | Works from original government and court documents, keeping links, dates, pinpoints, provenance and gaps |
-| ⚖️ | **Judgment briefs** | Separates facts, issues, holdings, observations and relief, and verifies the original before claiming support |
-| 📜 | **Statute and version checks** | Amendments, commencement, exceptions, repeal and savings, and the law that applied on a given date |
-| ✍️ | **Civil, criminal and family drafting** | Lawyer-review outlines and drafts with placeholders for missing facts, keeping jurisdiction and personal-law distinctions |
-| 🗂️ | **Quashing applications (APL)** | Bombay High Court (Nagpur Bench by default) criminal application under s.528 BNSS, rendered from a house-format Word template with no client data |
-| 🔎 | **Case status and property research** | Routes to official court, CNR, revenue and registration services, and distinguishes orders, registry entries, mutations and title evidence |
-| 🌐 | **Languages** | Marathi, Hindi and English using the host model's own ability; generated translations are labelled |
-| 🔔 | **Watchlists** | Configurable case and topic watchlists, manual by default; no scheduler is bundled |
+| I | **Official-source research** | Works from original government and court documents, keeping links, dates, pinpoints, provenance and gaps |
+| II | **Judgment briefs** | Separates facts, issues, holdings, observations and relief, and verifies the original before claiming support |
+| III | **Statute and version checks** | Amendments, commencement, exceptions, repeal and savings, and the law that applied on a given date |
+| IV | **Civil, criminal and family drafting** | Lawyer-review outlines and drafts with placeholders for missing facts, keeping jurisdiction and personal-law distinctions |
+| V | **Quashing applications (APL)** | Bombay High Court (Nagpur Bench by default) criminal application under s.528 BNSS, rendered from a house-format Word template with no client data |
+| VI | **Case status and property research** | Routes to official court, CNR, revenue and registration services, and distinguishes orders, registry entries, mutations and title evidence |
+| VII | **Languages** | Marathi, Hindi and English using the host model's own ability; generated translations are labelled |
+| VIII | **Watchlists** | Configurable case and topic watchlists, manual by default; no scheduler is bundled |
 
 ## Install
 
