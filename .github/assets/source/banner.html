@@ -1,0 +1,47 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=block" rel="stylesheet">
+<style>
+:root{--bg:#f7f3ea;--sheet:#fffdf8;--ink:#1b2333;--muted:#5d6270;--rule:#d9cfbc;--ox:#8a1c2b;--oxs:rgba(138,28,43,.82)}
+@media (prefers-color-scheme:dark){:root{--bg:#13161d;--sheet:#1c2029;--ink:#ede6d6;--muted:#a9a497;--rule:#343a46;--ox:#d9707c;--oxs:rgba(217,112,124,.9)}}
+*{box-sizing:border-box;margin:0}
+body{width:1600px;height:600px;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",sans-serif;position:relative;overflow:hidden}
+.top{position:absolute;left:0;right:0;top:0;height:10px;background:var(--ox)}
+.copy{position:absolute;left:96px;top:0;height:600px;width:820px;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font:600 17px "Source Sans 3",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ox);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.eyebrow:after{content:"";height:1px;width:120px;background:var(--ox)}
+h1{font:500 80px/1.02 Newsreader,serif;letter-spacing:-.015em}
+h1 em{font-style:italic;color:var(--ox)}
+p{font:400 24px/1.45 "Source Sans 3",sans-serif;color:var(--muted);margin-top:24px;max-width:680px}
+.courts{margin-top:30px;font:600 15px "Source Sans 3",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);display:flex;gap:0}
+.courts span{padding:0 16px;border-left:1px solid var(--rule)}.courts span:first-child{padding-left:0;border:0}
+.sheet{position:absolute;left:1030px;top:70px;width:440px;height:500px;background:var(--sheet);border:1px solid var(--rule);box-shadow:0 18px 50px rgba(27,35,51,.12);transform:rotate(2deg);padding:40px 34px 0 78px}
+.sheet:before{content:"";position:absolute;left:56px;top:0;bottom:0;width:2px;background:var(--ox);opacity:.55}
+.sheet .hd{font:600 13px Newsreader,serif;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;text-align:center;color:var(--muted)}
+.sheet .t{font:500 italic 22px Newsreader,serif;text-align:center;margin:10px 0 22px}
+.ln{height:10px;border-radius:2px;background:var(--rule);margin:15px 0}
+.ln.hl{background:linear-gradient(90deg,var(--ox) 0 0) ,var(--rule);box-shadow:inset 0 0 0 100px rgba(138,28,43,.18)}
+.pin{font:500 13px "IBM Plex Mono",monospace;color:var(--muted);margin-top:18px}
+.stamp{position:absolute;left:1270px;top:380px;width:180px;height:180px;border-radius:50%;border:4px solid var(--oxs);color:var(--oxs);transform:rotate(-14deg);display:grid;place-items:center;text-align:center}
+.stamp:before{content:"";position:absolute;inset:9px;border-radius:50%;border:1.5px solid var(--oxs)}
+.stamp b{display:block;font:600 23px/1 Newsreader,serif;letter-spacing:.06em;text-transform:uppercase}
+.stamp small{display:block;font:500 11px "IBM Plex Mono",monospace;letter-spacing:.08em;margin-top:8px}
+.stamp i{display:block;font:600 12px "Source Sans 3",sans-serif;letter-spacing:.22em;text-transform:uppercase;font-style:normal;margin-bottom:8px}
+</style></head><body>
+<div class="top"></div>
+<div class="copy">
+  <div class="eyebrow">Indian Law · Official Sources</div>
+  <h1>Legal research,<br><em>from the original.</em></h1>
+  <p>An agent plugin for Codex and Claude Code that works from official judgments and statutes, saves the originals and checks every quote.</p>
+  <div class="courts"><span>Supreme Court</span><span>Bombay HC</span><span>India Code</span><span>Maharashtra-first</span></div>
+</div>
+<div class="sheet">
+  <div class="hd">Research memo · draft</div>
+  <div class="t">For advocate review</div>
+  <div class="ln" style="width:100%"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:97%"></div>
+  <div class="ln hl" style="width:88%"></div><div class="ln hl" style="width:60%"></div>
+  <div class="ln" style="width:95%"></div><div class="ln" style="width:83%"></div>
+  <div class="pin">quote → pdf page 4 · sha-256 saved</div>
+</div>
+<div class="stamp"><div><i>Quote</i><b>Checked</b><small>against original</small></div></div>
+</body></html>
